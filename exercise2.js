@@ -23,11 +23,22 @@ class Animal {
 }
 
 class Dog extends Animal {
-  // YOUR CODE HERE
+  constructor() {
+      super("dog");
+  }
+  speak() {
+      return `The ${this.getType()} barks`;
+  }
 }
 
 class Cat extends Animal {
-  // YOUR CODE HERE
+  constructor() {
+      super("cat");
+  }
+
+  speak() {
+      return `The ${this.getType()} meows`;
+  }
 }
 
 
